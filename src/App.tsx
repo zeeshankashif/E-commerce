@@ -791,7 +791,7 @@ export default function App() {
                     src={product.image} 
                     alt={product.name} 
                     referrerPolicy="no-referrer"
-                    className="w-[85%] h-[85%] object-contain transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6 drop-shadow-xl"
+                    className="w-[85%] h-[85%] object-contain rounded-2xl transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6 drop-shadow-xl"
                   />
                   
                   {/* Floating Action overlay */}
@@ -982,7 +982,7 @@ export default function App() {
                 src={SNEAKER_POP_2} 
                 alt="Sneaky Engineering showcase model" 
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-contain -rotate-12 transform scale-110 select-none drop-shadow-[0_20px_50px_rgba(204,255,0,0.25)]"
+                className="w-full h-full object-contain rounded-3xl -rotate-12 transform scale-110 select-none drop-shadow-[0_20px_50px_rgba(204,255,0,0.25)]"
               />
 
               {/* HOTSPOT TRIGGER NODES */}
@@ -1685,7 +1685,7 @@ export default function App() {
                   </label>
                   <input 
                     type="email" 
-                    placeholder="e.g. techgames@sneaky.com" 
+                    placeholder="e.g. name@sneaky.com" 
                     value={authEmail}
                     onChange={(e) => setAuthEmail(e.target.value)}
                     required
@@ -1780,20 +1780,20 @@ export default function App() {
       </section>
 
       {/* -------------------- HISTORIC SNEAKER NEWSLETTER ARCHIVE -------------------- */}
-      <section className="py-20 px-4 sm:px-8 bg-brand-volt border-t-2 border-brand-charcoal relative overflow-hidden">
+      <section className="py-20 px-4 sm:px-8 bg-[#0e0e0e] border-t-2 border-brand-charcoal relative overflow-hidden">
         {/* Abstract design vector grids in background */}
-        <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-brand-lime opacity-30 blur-2xl pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-brand-lime opacity-10 blur-3xl pointer-events-none" />
         
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-6 relative z-10">
-          <div className="inline-flex items-center gap-1 px-3 py-1 bg-brand-charcoal text-white rounded-full font-mono text-[10px] font-black tracking-widest uppercase">
+          <div className="inline-flex items-center gap-1 px-3 py-1 bg-brand-volt text-brand-charcoal rounded-full font-mono text-[10px] font-black tracking-widest uppercase">
             ⚡ GET 15% DISCOUNT RIGHT AWAY
           </div>
           
-          <h2 className="font-display font-black text-4xl sm:text-6xl text-brand-charcoal uppercase italic tracking-tighter max-w-2xl leading-none -skew-x-6">
+          <h2 className="font-michroma text-3xl sm:text-5xl text-brand-volt uppercase italic tracking-tight max-w-2xl leading-none -skew-x-6">
             JOIN THE BRAND MEMBERSHIP TERM
           </h2>
           
-          <p className="text-brand-charcoal/80 text-sm sm:text-base max-w-lg font-semibold leading-relaxed">
+          <p className="text-white/80 text-sm sm:text-base max-w-lg font-semibold leading-relaxed">
             Subscribe your email into our active terminal today to unlock exclusive sneaker releases, private drop codes, and premium design insights.
           </p>
 
@@ -1823,12 +1823,12 @@ export default function App() {
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   required
-                  className="flex-1 p-4 bg-brand-charcoal text-white rounded-xl placeholder-white/45 font-medium text-sm focus:outline-none focus:ring-2 focus:ring-brand-volt shadow-inner"
+                  className="flex-1 p-4 bg-brand-charcoal text-white rounded-xl placeholder-white/45 font-medium text-sm focus:outline-none focus:ring-2 focus:ring-brand-volt shadow-inner border border-white/5"
                 />
                 <button
                   type="submit"
                   id="newsletter-subscribe-btn"
-                  className="py-4 px-6 md:px-8 bg-brand-charcoal hover:bg-brand-charcoal/90 text-brand-volt font-display font-black uppercase text-xs tracking-widest rounded-xl transition-all transform active:scale-95 shadow-lg flex items-center justify-center gap-2 group"
+                  className="py-4 px-6 md:px-8 bg-brand-volt hover:bg-brand-lime text-brand-charcoal font-display font-black uppercase text-xs tracking-widest rounded-xl transition-all transform active:scale-95 shadow-lg flex items-center justify-center gap-2 group"
                 >
                   <Send size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   <span>Subscribe</span>
@@ -1901,15 +1901,15 @@ export default function App() {
             <div className="flex flex-col gap-3.5 text-xs text-gray-400 font-semibold">
               <div className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-brand-volt shrink-0 mt-0.5" />
-                <span>842 Concrete Corridor, Sub-culture Block 49, Paris, France</span>
+                <span>Badami Bagh Lahore</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone size={16} className="text-brand-volt shrink-0" />
-                <span>+33 (1) 423-7485</span>
+                <span>+92 42 37651111</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail size={16} className="text-brand-volt shrink-0" />
-                <span className="hover:text-white transition-colors">labs@sneaky.com</span>
+                <span className="hover:text-white transition-colors">zeeshankashif.100m@gmail.com</span>
               </div>
             </div>
           </div>
