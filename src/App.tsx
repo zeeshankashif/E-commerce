@@ -1064,7 +1064,7 @@ export default function App() {
                 whileHover={{ scale: 1.02 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=350&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1588361861040-ac9b1018f6d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHNob2VzfGVufDB8fDB8fHww" 
                   alt="Sneaky street presentation red" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-2"
