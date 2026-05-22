@@ -982,7 +982,7 @@ export default function App() {
                 src={SNEAKER_POP_2} 
                 alt="Sneaky Engineering showcase model" 
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-contain rounded-3xl -rotate-12 transform scale-110 select-none drop-shadow-[0_20px_50px_rgba(204,255,0,0.25)]"
+                className="w-full h-full object-contain rounded-3xl transform scale-110 select-none drop-shadow-[0_20px_50px_rgba(204,255,0,0.25)]"
               />
 
               {/* HOTSPOT TRIGGER NODES */}
