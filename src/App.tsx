@@ -607,12 +607,12 @@ export default function App() {
             <div className="absolute w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] rounded-full bg-gradient-to-tr from-brand-volt/30 to-brand-lime/10 blur-2xl z-0 pointer-events-none" />
             
             {/* MAIN FLOATING SHOE IMAGE (Cropped to Shoes Only) */}
-            <div className="relative w-[340px] h-[240px] sm:w-[420px] sm:h-[300px] z-10 transition-transform duration-500 overflow-hidden rounded-[32px] sm:rounded-[40px] border border-brand-charcoal/10 shadow-2xl bg-brand-gray-light animate-float-sneaker flex items-center justify-center">
+            <div className="relative w-[320px] h-[240px] sm:w-[440px] sm:h-[330px] z-10 transition-transform duration-500 overflow-hidden rounded-[32px] sm:rounded-[40px] border border-brand-charcoal/10 shadow-2xl bg-brand-gray-light animate-float-sneaker flex items-center justify-center">
               <img 
                 src={HERO_IMAGE} 
                 alt="Sneaky Elite Flagship Floating" 
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover scale-[1.15] select-none"
+                className="w-full h-full object-cover select-none"
               />
             </div>
 
