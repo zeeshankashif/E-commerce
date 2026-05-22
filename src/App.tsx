@@ -29,7 +29,8 @@ import {
 import { Product, CartItem, CategoryFilter, UserState } from './types';
 
 // Import image assets
-import HERO_IMAGE from './assets/images/hero_sneaker_1779458274854.png';
+// Hero image URL
+const HERO_IMAGE = "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8fDA%3D";
 import SNEAKER_POP_1 from './assets/images/sneaker_popular_1_1779458300649.png';
 import SNEAKER_POP_2 from './assets/images/sneaker_popular_2_1779458325115.png';
 import SNEAKER_POP_3 from './assets/images/sneaker_popular_3_1779458353109.png';
@@ -571,17 +572,47 @@ export default function App() {
           {/* RIGHT VISUAL CENTERPIECE (5 cols) */}
           <div className="lg:col-span-5 relative flex items-center justify-center min-h-[420px] md:min-h-[500px]">
             
-            {/* Spinning background badge or glow circle */}
-            <div className="absolute w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] rounded-full border-4 border-dashed border-brand-charcoal/5 animate-slow-spin z-0 pointer-events-none" />
-            <div className="absolute w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] rounded-full bg-gradient-to-tr from-brand-volt/40 to-brand-lime/10 blur-xl z-0 pointer-events-none" />
+            {/* High-tech Concentric Animated Dotted & Dashed Circles */}
+            <svg className="absolute w-[340px] h-[340px] sm:w-[420px] sm:h-[420px] animate-slow-spin z-0 pointer-events-none text-brand-charcoal/15" viewBox="0 0 200 200">
+              <circle
+                cx="100"
+                cy="100"
+                r="92"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeDasharray="3 6"
+              />
+              <circle
+                cx="100"
+                cy="100"
+                r="78"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeDasharray="10 5 2 5"
+              />
+            </svg>
+            <svg className="absolute w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] animate-reverse-spin z-0 pointer-events-none text-brand-volt/45" viewBox="0 0 200 200">
+              <circle
+                cx="100"
+                cy="100"
+                r="84"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeDasharray="1 5"
+              />
+            </svg>
+            <div className="absolute w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] rounded-full bg-gradient-to-tr from-brand-volt/30 to-brand-lime/10 blur-2xl z-0 pointer-events-none" />
             
-            {/* MAIN FLOATING SHOE IMAGE */}
-            <div className="relative w-full max-w-[380px] sm:max-w-md z-10 transition-transform duration-500">
+            {/* MAIN FLOATING SHOE IMAGE (Cropped to Shoes Only) */}
+            <div className="relative w-[340px] h-[240px] sm:w-[420px] sm:h-[300px] z-10 transition-transform duration-500 overflow-hidden rounded-[32px] sm:rounded-[40px] border border-brand-charcoal/10 shadow-2xl bg-brand-gray-light animate-float-sneaker flex items-center justify-center">
               <img 
                 src={HERO_IMAGE} 
                 alt="Sneaky Elite Flagship Floating" 
                 referrerPolicy="no-referrer"
-                className="w-full object-contain glow-volt animate-float-sneaker select-none drop-shadow-2xl inline-block"
+                className="w-full h-full object-cover scale-[1.15] select-none"
               />
             </div>
 
@@ -1060,7 +1091,7 @@ export default function App() {
                 whileHover={{ scale: 1.02 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=350&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1747691875590-14db938e42d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fHNob2VzfGVufDB8fDB8fHww" 
                   alt="Streetwear running shoe in dynamic pose" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-2"
