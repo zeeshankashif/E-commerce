@@ -28,8 +28,11 @@ import {
 } from 'lucide-react';
 import { Product, CartItem, CategoryFilter, UserState } from './types';
 
-// Importing generated images
-const HERO_IMAGE = "/src/assets/images/hero_sneaker_1779458274854.png";
+// Import image assets
+import HERO_IMAGE from './assets/images/hero_sneaker_1779458274854.png';
+import SNEAKER_POP_1 from './assets/images/sneaker_popular_1_1779458300649.png';
+import SNEAKER_POP_2 from './assets/images/sneaker_popular_2_1779458325115.png';
+import SNEAKER_POP_3 from './assets/images/sneaker_popular_3_1779458353109.png';
 
 const PRODUCTS: Product[] = [
   {
@@ -38,7 +41,7 @@ const PRODUCTS: Product[] = [
     price: 300.00,
     originalPrice: 350.00,
     description: "Engineered for maximum energetic rebound and extreme street aesthetic. Built with hyper-breathable engineered knit upper and our proprietary double-density shock absorption vulcanized sole. The raw energetic Volt Yellow laces set a bold streetwear trend.",
-    image: "/src/assets/images/sneaker_popular_1_1779458300649.png",
+    image: SNEAKER_POP_1,
     rating: 4.9,
     reviewCount: 124,
     sizes: [7, 8, 9, 10, 11, 12],
@@ -51,7 +54,7 @@ const PRODUCTS: Product[] = [
     price: 260.00,
     originalPrice: 310.00,
     description: "An explosive performance running shoe crafted using premium lightweight ripstop mesh, integrated sock collar, and strategic carbon-fiber sprint plates. High-contrast Neon layout lets you dominate both low-light running tracks and daytime concrete blocks.",
-    image: "/src/assets/images/sneaker_popular_2_1779458325115.png",
+    image: SNEAKER_POP_2,
     rating: 4.8,
     reviewCount: 98,
     sizes: [8, 9, 10, 11],
@@ -64,7 +67,7 @@ const PRODUCTS: Product[] = [
     price: 305.00,
     originalPrice: 380.00,
     description: "Sleek tactical stealth design meets raw energetic volt green interior spikes. Tailored from high-resistance TPU polymers and specialized high-traction rubber outsoles. Delivers supreme lock-down stability for intensive lateral movement training.",
-    image: "/src/assets/images/sneaker_popular_3_1779458353109.png",
+    image: SNEAKER_POP_3,
     rating: 5.0,
     reviewCount: 162,
     sizes: [7, 8, 9, 10, 11, 12],
@@ -77,7 +80,7 @@ const PRODUCTS: Product[] = [
     price: 280.00,
     originalPrice: 320.00,
     description: "The street flagship sneaker combining a vintage sportswear frame with highly advanced responsive cushioning. Styled with signature volt-green elements on a premium sandstone grey body. Perfect for 24/7 all-day comfort.",
-    image: "/src/assets/images/sneaker_popular_1_1779458300649.png",
+    image: SNEAKER_POP_1,
     rating: 4.7,
     reviewCount: 84,
     sizes: [8, 9, 10, 11],
@@ -90,7 +93,7 @@ const PRODUCTS: Product[] = [
     price: 320.00,
     originalPrice: 360.00,
     description: "Designed strictly for those who want their footwear to make a roaring statement. A high-top mesh and composite leather masterpiece drenched in electric volt yellow, offering unrivaled breathability and anatomical heel cushioning.",
-    image: "/src/assets/images/sneaker_popular_2_1779458325115.png",
+    image: SNEAKER_POP_2,
     rating: 4.9,
     reviewCount: 205,
     sizes: [7, 8, 9, 10, 11, 12],
@@ -103,7 +106,7 @@ const PRODUCTS: Product[] = [
     price: 290.00,
     originalPrice: 340.00,
     description: "Fusing aerodynamic engineering and minimalist profile aesthetics. Employs laser-cut ventilation ports throughout the sneaker and a hyper-resilient foam crash pad to transform impact force into powerful forward speed.",
-    image: "/src/assets/images/sneaker_popular_3_1779458353109.png",
+    image: SNEAKER_POP_3,
     rating: 4.9,
     reviewCount: 110,
     sizes: [8, 9, 10, 11, 12],
@@ -945,7 +948,7 @@ export default function App() {
             {/* Main Shoe graphic angled beautifully */}
             <div className="relative w-full max-w-[420px] sm:max-w-md z-10">
               <img 
-                src="/src/assets/images/sneaker_popular_2_1779458325115.png" 
+                src={SNEAKER_POP_2} 
                 alt="Sneaky Engineering showcase model" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-contain -rotate-12 transform scale-110 select-none drop-shadow-[0_20px_50px_rgba(204,255,0,0.25)]"
