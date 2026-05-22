@@ -1,0 +1,6 @@
+{
+  "name": "Sneaky",
+  "description": "A high-end, responsive e-commerce landing page for the premium sneaker brand Sneaky.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
