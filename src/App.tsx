@@ -877,7 +877,7 @@ export default function App() {
               SNEAKY LAB TECH
             </div>
             
-            <h2 className="font-michroma text-3xl sm:text-4xl text-white uppercase italic tracking-tight -skew-x-6 animate-pulse-subtle">
+            <h2 className="font-michroma text-3xl sm:text-4xl text-white uppercase italic tracking-tight -skew-x-6">
               EXPLORE THE UNDER THE HOOD TECH
             </h2>
             
@@ -1244,7 +1244,7 @@ export default function App() {
                     {cart.map((item, index) => (
                       <div key={`${item.product.id}-${item.selectedSize}-${item.selectedColor}`} className="flex gap-4 p-3 bg-brand-gray-light/50 rounded-2xl border border-brand-charcoal/5">
                         <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center border border-brand-charcoal/5 scale-100 font-bold overflow-hidden">
-                          <img src={item.product.image} alt={item.product.name} className="w-[85%] h-[85%] object-contain -rotate-6" referrerPolicy="no-referrer" />
+                          <img src={item.product.image} alt={item.product.name} className="w-[85%] h-[85%] object-contain rounded-xl -rotate-6" referrerPolicy="no-referrer" />
                         </div>
                         <div className="flex-1 flex flex-col justify-between">
                           <div>
@@ -1374,7 +1374,7 @@ export default function App() {
                     src={selectedProduct.image} 
                     alt={selectedProduct.name} 
                     referrerPolicy="no-referrer"
-                    className="w-full h-auto object-contain glow-volt max-h-[320px] select-none"
+                    className="w-full h-auto object-contain rounded-3xl glow-volt max-h-[320px] select-none"
                   />
                 </div>
 
@@ -1618,7 +1618,7 @@ export default function App() {
                           >
                             <div className="flex items-center gap-3">
                               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center border p-1 shrink-0 overflow-hidden">
-                                <img src={product.image} alt={product.name} className="w-full h-full object-contain -rotate-6" referrerPolicy="no-referrer" />
+                                <img src={product.image} alt={product.name} className="w-full h-full object-contain rounded-lg -rotate-6" referrerPolicy="no-referrer" />
                               </div>
                               <div>
                                 <h4 className="font-display font-extrabold text-sm text-brand-charcoal">{product.name}</h4>
